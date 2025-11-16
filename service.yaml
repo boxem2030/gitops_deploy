@@ -6,7 +6,6 @@ metadata:
     service.beta.kubernetes.io/aws-load-balancer-type: "nlb"
     service.beta.kubernetes.io/aws-load-balancer-backend-protocol: tcp
     service.beta.kubernetes.io/aws-load-balancer-ssl-ports: "443"
-    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: arn:aws:iam::591784772748:user/hpe251115
 spec:
   selector:
     app: frontend-nginx
@@ -20,6 +19,7 @@ spec:
     port: 443
     targetPort: 80
   type: LoadBalancer
+
 
 
 
